@@ -50,6 +50,7 @@ void limitProcessCreation()
 
     // 10MB memory limit
     write_rule(my_cgroup_path + "/memory.max", "10M");
+    write_rule(my_cgroup_path + "/memory.swap.max", "0"); // memory swap disable
 
     // cpu limit Format: "<quota> <period>"
     write_rule(my_cgroup_path + "/cpu.max", "25000 100000");
