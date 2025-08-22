@@ -1,4 +1,4 @@
-# mini-container 📦
+# Mini Docker 📦
 
 A lightweight container runtime written in C that leverages modern Linux kernel features like namespaces and cgroups v2 to create isolated shell environments. This project demonstrates the core principles of containerization by directly using kernel features, without relying on high-level runtimes like Docker or LXC.
 
